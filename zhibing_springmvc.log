@@ -1,0 +1,892 @@
+[INFO][2015-06-23 16:49:31,191][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-23 16:49:31,393][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue Jun 23 16:49:31 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:49:31,491][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-23 16:49:31,856][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-23 16:49:31,944][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:49:32,366][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-23 16:49:32,786][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-23 16:49:33,205][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-23 16:49:33,213][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-23 16:49:33,219][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-23 16:49:33,221][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-23 16:49:33,821][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-23 16:49:34,065][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-23 16:49:34,069][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-23 16:49:34,090][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-23 16:49:34,427][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-23 16:49:34,429][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-23 16:49:34,436][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-23 16:49:34,437][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-23 16:49:35,092][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-23 16:49:32",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1576408634, ConnectTime:"2015-06-23 16:49:33", UseCount:1, LastActiveTime:"2015-06-23 16:49:33"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-23 16:49:35,528][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:49:31 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:49:35,583][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:49:31 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:49:35,666][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:49:35,681][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:49:35,688][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:49:35,725][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4533 ms
+[INFO][2015-06-23 16:49:35,813][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-23 16:49:35,819][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:49:35 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:49:35,820][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:49:35,924][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:49:35 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:49:35,942][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:49:35 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:49:35,963][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:49:35,966][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:49:35,967][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:49:35,991][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 178 ms
+[INFO][2015-06-23 16:52:56,574][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:49:35 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:52:56,593][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Tue Jun 23 16:49:31 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:52:56,607][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-23 16:52:57,046][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-23 16:52:57,136][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue Jun 23 16:52:57 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:52:57,189][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-23 16:52:57,361][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-23 16:52:57,413][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:52:57,758][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-23 16:52:57,988][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-23 16:52:58,373][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-23 16:52:58,380][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-23 16:52:58,382][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-23 16:52:58,384][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-23 16:52:59,277][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-23 16:52:59,555][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-23 16:52:59,560][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-23 16:52:59,587][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-23 16:52:59,732][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-23 16:52:59,737][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-23 16:52:59,744][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-23 16:52:59,745][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-23 16:53:00,400][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-23 16:52:57",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:2052190813, ConnectTime:"2015-06-23 16:52:59", UseCount:1, LastActiveTime:"2015-06-23 16:52:59"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-23 16:53:00,603][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:52:57 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:00,661][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:52:57 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:00,734][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:53:00,750][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:00,755][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:00,775][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3729 ms
+[INFO][2015-06-23 16:53:00,803][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-23 16:53:00,805][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:00 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:00,806][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:53:00,871][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:00 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:00,884][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:00 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:00,907][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:53:00,910][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:00,912][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:00,930][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 127 ms
+[INFO][2015-06-23 16:53:06,593][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:00 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:06,606][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Tue Jun 23 16:52:57 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:06,617][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-23 16:53:07,056][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-23 16:53:07,136][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue Jun 23 16:53:07 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:07,184][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-23 16:53:07,314][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-23 16:53:07,446][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:53:07,632][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-23 16:53:07,796][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-23 16:53:08,070][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-23 16:53:08,077][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-23 16:53:08,081][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-23 16:53:08,083][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-23 16:53:08,567][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-23 16:53:08,822][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-23 16:53:08,826][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-23 16:53:08,848][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-23 16:53:08,950][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-23 16:53:08,953][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-23 16:53:08,956][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-23 16:53:08,956][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-23 16:53:09,367][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-23 16:53:07",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:688827447, ConnectTime:"2015-06-23 16:53:08", UseCount:1, LastActiveTime:"2015-06-23 16:53:08"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-23 16:53:09,548][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:53:07 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:09,596][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:53:07 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:09,659][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:53:09,675][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:09,679][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:09,695][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2638 ms
+[INFO][2015-06-23 16:53:09,722][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-23 16:53:09,725][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:09 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:09,726][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:53:09,782][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:09 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:09,799][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:09 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:09,824][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:53:09,828][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:09,830][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:09,853][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 131 ms
+[INFO][2015-06-23 16:53:16,606][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:09 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:16,616][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Tue Jun 23 16:53:07 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:16,624][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-23 16:53:16,898][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-23 16:53:16,958][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue Jun 23 16:53:16 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:16,997][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-23 16:53:17,087][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-23 16:53:17,124][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:53:17,415][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-23 16:53:17,649][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-23 16:53:18,117][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-23 16:53:18,127][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-23 16:53:18,132][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-23 16:53:18,134][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-23 16:53:18,753][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-23 16:53:18,954][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-23 16:53:18,959][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-23 16:53:18,976][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-23 16:53:19,056][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-23 16:53:19,058][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-23 16:53:19,061][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-23 16:53:19,062][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-23 16:53:19,479][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-23 16:53:17",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1638644467, ConnectTime:"2015-06-23 16:53:18", UseCount:1, LastActiveTime:"2015-06-23 16:53:18"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-23 16:53:19,968][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:53:16 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:20,007][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:53:16 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:20,060][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:53:20,067][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:20,072][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:20,088][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3190 ms
+[INFO][2015-06-23 16:53:20,113][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-23 16:53:20,117][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:20 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:20,119][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:53:20,197][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:20 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:20,211][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:20 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:20,229][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:53:20,235][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:20,237][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:20,263][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 149 ms
+[INFO][2015-06-23 16:53:25,805][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-23 16:53:25,911][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue Jun 23 16:53:25 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:25,949][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-23 16:53:26,204][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-23 16:53:26,262][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:53:26,581][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-23 16:53:26,910][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-23 16:53:27,339][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-23 16:53:27,351][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-23 16:53:27,356][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-23 16:53:27,358][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-23 16:53:27,916][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-23 16:53:28,156][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-23 16:53:28,161][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-23 16:53:28,189][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-23 16:53:28,561][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-23 16:53:28,563][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-23 16:53:28,566][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-23 16:53:28,566][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-23 16:53:29,182][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-23 16:53:26",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1454942961, ConnectTime:"2015-06-23 16:53:27", UseCount:1, LastActiveTime:"2015-06-23 16:53:27"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-23 16:53:29,573][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:53:25 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:29,627][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:53:25 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:53:29,720][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:53:29,737][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:29,745][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:29,784][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3978 ms
+[INFO][2015-06-23 16:53:29,862][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-23 16:53:29,866][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:29 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:29,867][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:53:29,949][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:29 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:29,975][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:29 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:53:30,005][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:53:30,009][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:30,011][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:53:30,038][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 176 ms
+[INFO][2015-06-23 16:54:10,615][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:53:29 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:54:10,658][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Tue Jun 23 16:53:25 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:54:10,736][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-23 16:54:11,366][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-23 16:54:11,454][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue Jun 23 16:54:11 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:54:11,507][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-23 16:54:11,663][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-23 16:54:11,719][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:54:11,973][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-23 16:54:12,216][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-23 16:54:12,579][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-23 16:54:12,587][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-23 16:54:12,590][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-23 16:54:12,592][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-23 16:54:13,136][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-23 16:54:13,355][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-23 16:54:13,360][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-23 16:54:13,380][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-23 16:54:13,654][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-23 16:54:13,657][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-23 16:54:13,660][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-23 16:54:13,660][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-23 16:54:14,069][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-23 16:54:12",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:397372794, ConnectTime:"2015-06-23 16:54:13", UseCount:1, LastActiveTime:"2015-06-23 16:54:13"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-23 16:54:14,285][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:54:11 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:54:14,341][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:54:11 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:54:14,412][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:54:14,424][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:54:14,428][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:54:14,449][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3083 ms
+[INFO][2015-06-23 16:54:14,485][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-23 16:54:14,491][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:54:14 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:54:14,492][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:54:14,565][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:54:14 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:54:14,586][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:54:14 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:54:14,609][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:54:14,614][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:54:14,616][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:54:14,639][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 154 ms
+[INFO][2015-06-23 16:54:35,165][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-23 16:54:35,236][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Tue Jun 23 16:54:35 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:54:35,269][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-23 16:54:35,470][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-23 16:54:35,515][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:54:35,725][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-23 16:54:36,027][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-23 16:54:36,454][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-23 16:54:36,464][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-23 16:54:36,470][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-23 16:54:36,473][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-23 16:54:36,949][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-23 16:54:37,134][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-23 16:54:37,138][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-23 16:54:37,153][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-23 16:54:37,432][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-23 16:54:37,434][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-23 16:54:37,438][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-23 16:54:37,438][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-23 16:54:38,022][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-23 16:54:35",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:921640293, ConnectTime:"2015-06-23 16:54:36", UseCount:1, LastActiveTime:"2015-06-23 16:54:36"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-23 16:54:38,313][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:54:35 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:54:38,371][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Tue Jun 23 16:54:35 CST 2015]; root of context hierarchy
+[INFO][2015-06-23 16:54:38,440][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:54:38,451][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:54:38,457][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:54:38,478][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3313 ms
+[INFO][2015-06-23 16:54:38,534][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-23 16:54:38,537][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:54:38 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:54:38,537][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-23 16:54:38,607][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:54:38 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:54:38,622][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Tue Jun 23 16:54:38 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-23 16:54:38,643][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-23 16:54:38,646][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-23 16:54:38,648][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-23 16:54:38,666][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 132 ms
+[INFO][2015-06-26 15:59:00,674][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-26 15:59:00,759][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jun 26 15:59:00 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 15:59:00,808][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-26 15:59:01,036][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-26 15:59:01,118][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-26 15:59:01,426][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-26 15:59:01,761][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-26 15:59:02,064][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-26 15:59:02,071][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-26 15:59:02,084][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-26 15:59:02,087][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-26 15:59:02,701][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-26 15:59:02,909][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-26 15:59:02,915][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-26 15:59:02,931][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-26 15:59:03,282][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-26 15:59:03,284][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-26 15:59:03,288][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-26 15:59:03,288][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-26 15:59:03,860][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-26 15:59:01",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1250315597, ConnectTime:"2015-06-26 15:59:02", UseCount:1, LastActiveTime:"2015-06-26 15:59:02"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-26 15:59:04,233][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 15:59:00 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 15:59:04,283][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 15:59:00 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 15:59:04,342][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 15:59:04,352][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 15:59:04,356][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 15:59:04,362][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 15:59:04,395][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3720 ms
+[INFO][2015-06-26 15:59:04,459][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-26 15:59:04,462][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 15:59:04 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 15:59:04,463][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-26 15:59:04,528][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 15:59:04 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 15:59:04,542][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 15:59:04 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 15:59:04,566][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 15:59:04,569][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 15:59:04,572][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 15:59:04,574][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 15:59:04,592][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 133 ms
+[INFO][2015-06-26 17:17:20,162][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-26 17:17:20,228][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jun 26 17:17:20 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:17:20,295][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-26 17:17:20,630][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-26 17:17:20,678][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:17:20,900][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-26 17:17:21,141][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-26 17:17:21,444][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-26 17:17:21,451][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-26 17:17:21,454][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-26 17:17:21,456][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-26 17:17:21,890][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-26 17:17:22,113][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-26 17:17:22,119][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-26 17:17:22,140][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-26 17:17:22,495][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-26 17:17:22,497][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-26 17:17:22,500][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-26 17:17:22,501][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-26 17:17:22,924][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-26 17:17:20",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:698562080, ConnectTime:"2015-06-26 17:17:21", UseCount:1, LastActiveTime:"2015-06-26 17:17:21"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-26 17:17:23,238][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:17:20 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:17:23,278][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:17:20 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:17:23,341][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:17:23,349][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:17:23,352][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:17:23,357][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:17:23,379][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3216 ms
+[INFO][2015-06-26 17:17:23,429][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-26 17:17:23,434][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:17:23 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:17:23,435][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:17:23,509][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:17:23 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:17:23,522][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:17:23 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:17:23,541][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:17:23,543][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:17:23,545][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:17:23,548][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:17:23,568][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 138 ms
+[INFO][2015-06-26 17:17:24,266][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:17:23 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:17:24,311][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Fri Jun 26 17:17:20 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:17:24,332][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-26 17:19:35,937][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-26 17:19:36,022][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jun 26 17:19:36 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:19:36,063][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-26 17:19:36,270][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-26 17:19:36,307][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:19:36,508][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-26 17:19:36,750][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-26 17:19:37,063][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-26 17:19:37,072][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-26 17:19:37,075][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-26 17:19:37,077][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-26 17:19:37,517][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-26 17:19:37,728][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-26 17:19:37,735][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-26 17:19:37,755][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-26 17:19:38,063][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-26 17:19:38,065][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-26 17:19:38,068][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-26 17:19:38,068][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-26 17:19:38,526][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-26 17:19:36",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:698562080, ConnectTime:"2015-06-26 17:19:37", UseCount:1, LastActiveTime:"2015-06-26 17:19:37"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-26 17:19:38,790][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:19:36 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:19:38,832][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:19:36 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:19:38,895][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:19:38,905][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:19:38,909][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:19:38,915][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:19:38,935][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2998 ms
+[INFO][2015-06-26 17:19:38,986][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-26 17:19:38,989][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:19:38 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:19:38,990][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:19:39,058][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:19:38 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:19:39,073][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:19:38 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:19:39,093][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:19:39,095][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:19:39,097][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:19:39,100][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:19:39,117][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 131 ms
+[INFO][2015-06-26 17:19:39,868][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:19:38 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:19:39,881][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Fri Jun 26 17:19:36 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:19:39,890][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-26 17:20:06,336][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-26 17:20:06,410][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jun 26 17:20:06 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:20:06,448][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-26 17:20:06,669][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-26 17:20:06,714][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:20:06,924][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-26 17:20:07,190][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-26 17:20:07,507][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-26 17:20:07,515][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-26 17:20:07,519][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-26 17:20:07,520][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-26 17:20:07,982][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-26 17:20:08,200][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-26 17:20:08,206][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-26 17:20:08,227][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-26 17:20:08,558][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-26 17:20:08,559][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-26 17:20:08,563][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-26 17:20:08,564][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-26 17:20:09,023][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-26 17:20:07",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:698562080, ConnectTime:"2015-06-26 17:20:07", UseCount:1, LastActiveTime:"2015-06-26 17:20:07"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-26 17:20:09,295][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:20:06 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:20:09,338][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:20:06 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:20:09,401][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:20:09,411][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:20:09,414][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:20:09,420][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:20:09,443][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3107 ms
+[INFO][2015-06-26 17:20:09,497][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-26 17:20:09,500][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:20:09 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:20:09,502][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:20:09,568][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:20:09 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:20:09,580][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:20:09 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:20:09,598][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:20:09,601][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:20:09,603][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:20:09,605][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:20:09,626][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 128 ms
+[INFO][2015-06-26 17:20:10,318][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:20:09 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:20:10,351][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Fri Jun 26 17:20:06 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:20:10,377][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-26 17:23:13,811][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-26 17:23:13,879][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jun 26 17:23:13 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:23:13,926][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-26 17:23:14,116][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-26 17:23:14,165][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:23:14,373][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-26 17:23:14,629][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-26 17:23:14,941][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-26 17:23:14,947][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-26 17:23:14,950][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-26 17:23:14,951][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-26 17:23:15,394][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-26 17:23:15,605][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-26 17:23:15,610][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-26 17:23:15,632][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-26 17:23:15,981][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-26 17:23:15,984][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-26 17:23:15,990][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-26 17:23:15,990][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-26 17:23:16,532][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-26 17:23:14",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:698562080, ConnectTime:"2015-06-26 17:23:15", UseCount:1, LastActiveTime:"2015-06-26 17:23:15"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-26 17:23:16,799][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:23:13 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:23:16,844][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:23:13 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:23:16,909][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:23:16,916][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:23:16,919][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:23:16,924][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:23:16,960][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3149 ms
+[INFO][2015-06-26 17:23:17,019][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-26 17:23:17,022][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:23:17 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:23:17,022][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:23:17,093][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:23:17 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:23:17,108][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:23:17 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:23:17,128][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:23:17,131][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:23:17,133][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:23:17,135][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:23:17,157][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 138 ms
+[INFO][2015-06-26 17:23:17,862][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:23:17 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:23:17,897][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Fri Jun 26 17:23:13 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:23:17,912][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-26 17:26:45,689][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 15:59:04 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:26:45,701][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Fri Jun 26 15:59:00 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:26:45,711][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-26 17:26:46,040][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-26 17:26:46,100][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jun 26 17:26:46 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:26:46,130][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-26 17:26:46,212][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-26 17:26:46,253][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:26:46,507][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-26 17:26:46,917][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-26 17:26:47,252][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-26 17:26:47,258][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-26 17:26:47,262][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-26 17:26:47,264][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-26 17:26:47,681][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-26 17:26:47,898][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-26 17:26:47,901][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-26 17:26:47,918][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-26 17:26:47,994][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-26 17:26:47,996][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-26 17:26:47,999][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-26 17:26:47,999][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-26 17:26:48,342][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-26 17:26:46",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1677393486, ConnectTime:"2015-06-26 17:26:47", UseCount:1, LastActiveTime:"2015-06-26 17:26:47"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-26 17:26:48,499][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:26:46 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:26:48,560][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:26:46 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:26:48,617][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:26:48,626][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:26:48,629][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:26:48,634][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:26:48,652][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2611 ms
+[INFO][2015-06-26 17:26:48,674][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-26 17:26:48,677][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:26:48 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:26:48,677][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:26:48,734][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:26:48 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:26:48,746][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:26:48 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:26:48,765][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:26:48,769][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:26:48,774][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:26:48,776][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:26:48,797][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 123 ms
+[INFO][2015-06-26 17:27:34,203][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-26 17:27:34,287][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jun 26 17:27:34 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:27:34,340][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-26 17:27:34,567][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-26 17:27:34,608][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:27:34,831][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-26 17:27:35,184][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-26 17:27:35,513][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-26 17:27:35,521][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-26 17:27:35,524][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-26 17:27:35,526][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-26 17:27:36,010][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-26 17:27:36,257][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-26 17:27:36,263][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-26 17:27:36,286][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-26 17:27:36,660][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-26 17:27:36,663][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-26 17:27:36,668][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-26 17:27:36,668][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-26 17:27:37,140][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-26 17:27:34",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:44332439, ConnectTime:"2015-06-26 17:27:35", UseCount:1, LastActiveTime:"2015-06-26 17:27:36"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-26 17:27:37,512][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:27:34 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:27:37,563][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:27:34 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:27:37,659][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:27:37,672][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:27:37,675][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:27:37,681][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:27:37,704][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3501 ms
+[INFO][2015-06-26 17:27:37,763][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-26 17:27:37,766][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:27:37 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:27:37,767][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:27:37,839][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:27:37 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:27:37,856][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:27:37 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:27:37,877][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:27:37,881][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:27:37,883][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:27:37,885][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:27:37,907][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 144 ms
+[INFO][2015-06-26 17:27:38,574][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:27:37 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:27:38,609][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Fri Jun 26 17:27:34 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:27:38,621][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-26 17:28:05,768][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:26:48 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:05,794][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Fri Jun 26 17:26:46 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:05,801][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-26 17:28:06,058][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-26 17:28:06,112][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jun 26 17:28:06 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:06,145][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-26 17:28:06,221][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-26 17:28:06,253][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:28:06,449][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-26 17:28:06,622][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-26 17:28:06,962][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-26 17:28:06,970][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-26 17:28:06,973][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-26 17:28:06,975][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-26 17:28:07,422][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-26 17:28:07,561][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-26 17:28:07,567][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-26 17:28:07,580][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-26 17:28:07,651][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-26 17:28:07,653][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-26 17:28:07,656][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-26 17:28:07,656][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-26 17:28:07,984][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-26 17:28:06",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1287460883, ConnectTime:"2015-06-26 17:28:07", UseCount:1, LastActiveTime:"2015-06-26 17:28:07"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-26 17:28:08,149][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:28:06 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:08,220][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:28:06 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:08,283][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:28:08,292][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:08,295][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:28:08,299][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:08,319][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2260 ms
+[INFO][2015-06-26 17:28:08,340][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-26 17:28:08,342][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:08 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:08,343][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:28:08,399][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:08 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:08,414][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:08 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:08,436][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:28:08,441][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:08,443][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:28:08,445][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:08,469][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 129 ms
+[INFO][2015-06-26 17:28:35,725][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:08 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:35,750][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Fri Jun 26 17:28:06 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:35,770][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-26 17:28:36,024][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-26 17:28:36,088][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jun 26 17:28:36 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:36,137][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-26 17:28:36,230][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-26 17:28:36,309][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:28:36,553][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-26 17:28:37,004][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-26 17:28:37,369][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-26 17:28:37,375][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-26 17:28:37,378][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-26 17:28:37,379][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-26 17:28:37,878][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-26 17:28:38,107][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-26 17:28:38,111][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-26 17:28:38,132][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-26 17:28:38,241][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-26 17:28:38,243][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-26 17:28:38,259][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-26 17:28:38,263][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-26 17:28:38,593][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-26 17:28:36",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:37642222, ConnectTime:"2015-06-26 17:28:37", UseCount:1, LastActiveTime:"2015-06-26 17:28:37"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-26 17:28:38,754][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:28:36 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:38,804][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:28:36 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:38,872][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:28:38,883][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:38,886][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:28:38,891][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:38,923][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2899 ms
+[INFO][2015-06-26 17:28:38,948][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-26 17:28:38,950][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:38 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:38,951][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:28:39,002][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:38 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:39,018][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:38 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:39,038][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:28:39,042][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:39,044][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:28:39,046][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:39,068][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 120 ms
+[INFO][2015-06-26 17:28:45,724][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:38 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:45,741][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Fri Jun 26 17:28:36 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:45,759][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-26 17:28:46,025][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-26 17:28:46,073][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jun 26 17:28:46 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:46,112][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-26 17:28:46,184][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-26 17:28:46,212][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:28:46,356][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-26 17:28:46,575][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-26 17:28:46,834][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-26 17:28:46,839][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-26 17:28:46,842][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-26 17:28:46,843][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-26 17:28:47,201][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-26 17:28:47,382][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-26 17:28:47,386][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-26 17:28:47,405][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-26 17:28:47,499][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-26 17:28:47,502][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-26 17:28:47,505][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-26 17:28:47,506][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-26 17:28:47,834][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-26 17:28:46",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:669991097, ConnectTime:"2015-06-26 17:28:47", UseCount:1, LastActiveTime:"2015-06-26 17:28:47"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-26 17:28:48,005][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:28:46 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:48,040][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:28:46 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:48,101][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:28:48,109][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:48,112][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:28:48,116][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:48,134][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 2109 ms
+[INFO][2015-06-26 17:28:48,152][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-26 17:28:48,154][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:48 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:48,155][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:28:48,199][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:48 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:48,211][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:48 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:48,229][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:28:48,231][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:48,233][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:28:48,234][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:48,250][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 98 ms
+[INFO][2015-06-26 17:28:55,745][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:48 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:55,757][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Fri Jun 26 17:28:46 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:55,768][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-26 17:28:55,982][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-26 17:28:56,060][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Fri Jun 26 17:28:56 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:56,101][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-26 17:28:56,162][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-26 17:28:56,188][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [C:\Users\u6031313\Documents\GitHub\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:28:56,328][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-26 17:28:56,455][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-26 17:28:56,727][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-26 17:28:56,733][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-26 17:28:56,735][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-26 17:28:56,737][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-26 17:28:57,094][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-26 17:28:57,267][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-26 17:28:57,272][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-26 17:28:57,293][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-26 17:28:57,384][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-26 17:28:57,386][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-26 17:28:57,391][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-26 17:28:57,391][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-26 17:28:57,733][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-26 17:28:56",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1408426475, ConnectTime:"2015-06-26 17:28:57", UseCount:1, LastActiveTime:"2015-06-26 17:28:57"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-26 17:28:57,870][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:28:56 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:57,896][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Fri Jun 26 17:28:56 CST 2015]; root of context hierarchy
+[INFO][2015-06-26 17:28:57,941][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:28:57,950][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:57,953][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:28:57,958][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:57,978][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 1995 ms
+[INFO][2015-06-26 17:28:57,994][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-26 17:28:57,996][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:57 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:57,997][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-26 17:28:58,048][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:57 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:58,062][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Fri Jun 26 17:28:57 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-26 17:28:58,079][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-26 17:28:58,081][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:58,083][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-26 17:28:58,086][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-26 17:28:58,102][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 108 ms

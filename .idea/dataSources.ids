@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - uwdb@localhost" uuid="0c23ab63-31dd-492e-9998-3904f784065f">
+    <database-info product="MySQL" version="5.6.21-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.30 ( Revision: alexander.soklakov@oracle.com-20140310090514-8xt1yoht5ksg2e7c )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="uwdb"/>
+    <table name="assignedpermissions" schema="" catalog="uwdb" type="TABLE">
+      <column name="permission_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="role_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="permission_id,role_id"/>
+      <foreign-key name="fk_assignedpermissions_permission" columns="permission_id" ref-table="permissions" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_assignedpermissions_role" columns="role_id" ref-table="roles" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="fk_assignedpermissions_permission" unique="false" columns="permission_id"/>
+      <index name="fk_assignedpermissions_role" unique="false" columns="role_id"/>
+    </table>
+    <table name="assignedusers" schema="" catalog="uwdb" type="TABLE">
+      <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="role_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="user_id,role_id"/>
+      <foreign-key name="fk_assignedusers_role" columns="role_id" ref-table="roles" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_assignedusers_user" columns="user_id" ref-table="users" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="fk_assignedusers_role" unique="false" columns="role_id"/>
+      <index name="fk_assignedusers_user" unique="false" columns="user_id"/>
+    </table>
+    <table name="dynamicseparationdutyset" schema="" catalog="uwdb" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="cardinality" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="fk_dsdroles_dsd" table="dynamicseparationdutysetroles" schema="" catalog="uwdb" columns="dsd_id"/>
+    </table>
+    <table name="dynamicseparationdutysetroles" schema="" catalog="uwdb" type="TABLE">
+      <column name="dsd_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="role_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="dsd_id,role_id"/>
+      <foreign-key name="fk_dsdroles_dsd" columns="dsd_id" ref-table="dynamicseparationdutyset" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_dsdroles_role" columns="role_id" ref-table="roles" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="fk_dsdroles_dsd" unique="false" columns="dsd_id"/>
+      <index name="fk_dsdroles_role" unique="false" columns="role_id"/>
+    </table>
+    <table name="objects" schema="" catalog="uwdb" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="fk_permissions_object" table="permissions" schema="" catalog="uwdb" columns="object_id"/>
+      <index name="unq_objects_name" unique="true" columns="name"/>
+    </table>
+    <table name="operations" schema="" catalog="uwdb" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="fk_permission_operation" table="permissions" schema="" catalog="uwdb" columns="operation_id"/>
+      <index name="unq_operations_name" unique="true" columns="name"/>
+    </table>
+    <table name="permissions" schema="" catalog="uwdb" type="TABLE">
+      <column name="operation_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="object_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="fk_permission_operation" columns="operation_id" ref-table="operations" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_permissions_object" columns="object_id" ref-table="objects" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="fk_assignedpermissions_permission" table="assignedpermissions" schema="" catalog="uwdb" columns="permission_id"/>
+      <index name="unq_permissions_name" unique="true" columns="name"/>
+      <index name="fk_permission_operation" unique="false" columns="operation_id"/>
+      <index name="fk_permissions_object" unique="false" columns="object_id"/>
+    </table>
+    <table name="roles" schema="" catalog="uwdb" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="fk_assignedpermissions_role" table="assignedpermissions" schema="" catalog="uwdb" columns="role_id"/>
+      <exported-key name="fk_assignedusers_role" table="assignedusers" schema="" catalog="uwdb" columns="role_id"/>
+      <exported-key name="fk_dsdroles_role" table="dynamicseparationdutysetroles" schema="" catalog="uwdb" columns="role_id"/>
+      <exported-key name="fk_rolesinheritance_child" table="rolesinheritance" schema="" catalog="uwdb" columns="role_child"/>
+      <exported-key name="fk_rolesinheritance_parent" table="rolesinheritance" schema="" catalog="uwdb" columns="role_parent"/>
+      <exported-key name="fk_sessionroles_role" table="sessionroles" schema="" catalog="uwdb" columns="role_id"/>
+      <index name="unq_roles_name" unique="true" columns="name"/>
+    </table>
+    <table name="rolesinheritance" schema="" catalog="uwdb" type="TABLE">
+      <column name="role_child" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="role_parent" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="role_child,role_parent"/>
+      <foreign-key name="fk_rolesinheritance_child" columns="role_child" ref-table="roles" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_rolesinheritance_parent" columns="role_parent" ref-table="roles" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="fk_rolesinheritance_child" unique="false" columns="role_child"/>
+      <index name="fk_rolesinheritance_parent" unique="false" columns="role_parent"/>
+    </table>
+    <table name="sessionroles" schema="" catalog="uwdb" type="TABLE">
+      <column name="session_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="role_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="session_id,role_id"/>
+      <foreign-key name="fk_sessionroles_role" columns="role_id" ref-table="roles" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="fk_sessionroles_session" columns="session_id" ref-table="sessions" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="fk_sessionroles_role" unique="false" columns="role_id"/>
+      <index name="fk_sessionroles_session" unique="false" columns="session_id"/>
+    </table>
+    <table name="sessions" schema="" catalog="uwdb" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="active" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="start_date" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="end_date" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="remote_session" sqlType="VARCHAR" precision="200" scale="0" nullable="true" jdbcType="12"/>
+      <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="fk_sessions_user" columns="user_id" ref-table="users" ref-schema="" ref-catalog="uwdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="fk_sessionroles_session" table="sessionroles" schema="" catalog="uwdb" columns="session_id"/>
+      <index name="fk_sessions_user" unique="false" columns="user_id"/>
+    </table>
+    <table name="users" schema="" catalog="uwdb" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="fk_assignedusers_user" table="assignedusers" schema="" catalog="uwdb" columns="user_id"/>
+      <exported-key name="fk_sessions_user" table="sessions" schema="" catalog="uwdb" columns="user_id"/>
+    </table>
+  </data-source>
+</component>

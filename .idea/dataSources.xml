@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3843758085">
+    <data-source source="LOCAL" name="MySQL - uwdb@localhost" uuid="0c23ab63-31dd-492e-9998-3904f784065f">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/uwdb</jdbc-url>
+      <driver-properties>
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+      <libraries>
+        <library>
+          <url>file://E:/Maven/.m2/repository/mysql/mysql-connector-java/5.1.30/mysql-connector-java-5.1.30.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>

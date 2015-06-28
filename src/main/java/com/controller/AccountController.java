@@ -3,6 +3,7 @@ package com.controller;
 import com.entities.po.User;
 import com.service.UserService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -27,13 +28,24 @@ public class AccountController {
         user.setPassword(password);
         User rstUser =userService.findUserByNameAndPassword(user);
         if(rstUser!=null){
-            httpSession.setAttribute("user",user);
-            modelAndView.setViewName("/account/success");
-            modelAndView.addObject(rstUser);
-
+            if (rstUser.getPassword().equals(user.getPassword())) {
+                httpSession.setAttribute("user", user);
+                modelAndView.setViewName("/home/index");
+                modelAndView.addObject(rstUser);
+            }else{
+                httpSession.setAttribute("message","��������������������룡");
+                modelAndView.setViewName("/home/index");
+            }
         }else{
-            modelAndView.setViewName("/account/false");
+            httpSession.setAttribute("message","�û��������ڣ�����ע�ᣡ");
+            modelAndView.setViewName("/home/index");
         }
         return modelAndView;
+    }
+    @RequestMapping("/success")
+    public String success(Model model,HttpSession session){
+        Object obj =  session.getAttribute("user");
+        model.addAttribute(obj);
+        return "home/index";
     }
 }

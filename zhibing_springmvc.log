@@ -2214,3 +2214,113 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 [INFO][2015-06-28 21:40:07,738][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 1561 ms
 [WARN][2015-06-28 21:40:27,148][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
 [WARN][2015-06-28 21:40:27,150][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 59.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-06-28 23:14:50,236][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-28 23:14:50,326][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Jun 28 23:14:50 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 23:14:50,367][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-28 23:14:50,582][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-28 23:14:50,670][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-28 23:14:52,082][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-28 23:14:52,466][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-28 23:14:52,866][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-28 23:14:52,873][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-28 23:14:52,877][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-28 23:14:52,879][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-28 23:14:53,507][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-28 23:14:53,822][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-28 23:14:53,829][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-28 23:14:53,848][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-28 23:14:54,243][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-28 23:14:54,245][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-28 23:14:54,252][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-28 23:14:54,253][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-28 23:14:54,979][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-28 23:14:52",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1722528506, ConnectTime:"2015-06-28 23:14:53", UseCount:1, LastActiveTime:"2015-06-28 23:14:53"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-28 23:14:55,402][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/account/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.controller.AccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+[INFO][2015-06-28 23:14:55,403][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/home/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.HomeController.index()
+[INFO][2015-06-28 23:14:55,597][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 23:14:50 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 23:14:55,658][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 23:14:50 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 23:14:55,747][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 23:14:55,758][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 23:14:55,763][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 23:14:55,769][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 23:14:55,799][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 5562 ms
+[INFO][2015-06-28 23:14:55,889][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-28 23:14:55,893][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 23:14:55 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 23:14:55,894][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-28 23:14:56,823][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/account/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.controller.AccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+[INFO][2015-06-28 23:14:56,823][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/home/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.HomeController.index()
+[INFO][2015-06-28 23:14:56,843][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 23:14:55 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 23:14:56,860][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 23:14:55 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 23:14:56,887][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 23:14:56,890][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 23:14:56,892][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 23:14:56,894][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 23:14:56,916][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 1027 ms
+[WARN][2015-06-28 23:15:36,187][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-06-28 23:15:36,189][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 59.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-06-28 23:15:36,238][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[INFO][2015-06-28 23:18:34,210][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-28 23:18:34,294][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Jun 28 23:18:34 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 23:18:34,336][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-28 23:18:34,702][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-28 23:18:34,777][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-28 23:18:36,224][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-28 23:18:36,577][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-28 23:18:37,093][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-28 23:18:37,113][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-28 23:18:37,118][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-28 23:18:37,121][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-28 23:18:37,914][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-28 23:18:38,168][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-28 23:18:38,173][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-28 23:18:38,201][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-28 23:18:38,588][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-28 23:18:38,594][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-28 23:18:38,604][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-28 23:18:38,605][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-28 23:18:39,364][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-28 23:18:36",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1535571147, ConnectTime:"2015-06-28 23:18:37", UseCount:1, LastActiveTime:"2015-06-28 23:18:37"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-28 23:18:40,119][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/account/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.controller.AccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+[INFO][2015-06-28 23:18:40,120][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/home/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.HomeController.index()
+[INFO][2015-06-28 23:18:40,420][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 23:18:34 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 23:18:40,492][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 23:18:34 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 23:18:40,669][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 23:18:40,687][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 23:18:40,691][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 23:18:40,700][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 23:18:40,753][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 6542 ms
+[INFO][2015-06-28 23:18:40,868][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-28 23:18:40,872][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 23:18:40 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 23:18:40,874][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-28 23:18:42,387][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/account/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.controller.AccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+[INFO][2015-06-28 23:18:42,387][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/home/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.HomeController.index()
+[INFO][2015-06-28 23:18:42,412][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 23:18:40 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 23:18:42,429][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 23:18:40 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 23:18:42,462][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 23:18:42,466][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 23:18:42,468][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 23:18:42,470][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 23:18:42,519][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 1651 ms
+[WARN][2015-06-28 23:18:53,379][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-06-28 23:18:53,382][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 59.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-06-28 23:18:53,445][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.

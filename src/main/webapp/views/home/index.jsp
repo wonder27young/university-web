@@ -32,7 +32,15 @@
       <a class="navbar-brand" href="#">王小羊的网站</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-      <form class="navbar-form navbar-right" action="<%=request.getContextPath()%>/login" method="post">
+      <% if (session.getAttribute("user")!=null){
+        %>
+
+      <div class="navbar-form navbar-right white">欢迎您，${user.name}</div>
+      <%
+      }else{
+      %>
+      <form class="navbar-form navbar-right" action="<%=request.getContextPath()%>/account/login" method="post">
+
         <div class="form-group">
           <input type="text" placeholder="Username" class="form-control" name="username">
         </div>
@@ -41,6 +49,9 @@
         </div>
         <button type="submit" class="btn btn-success">登录</button>
       </form>
+      <%
+        }
+      %>
     </div><!--/.navbar-collapse -->
   </div>
 </nav>

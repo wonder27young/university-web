@@ -47,7 +47,7 @@ THE SOFTWARE.*/
  */
 
 @Entity
-@Table(name="Users")
+@Table(name="users")
 @NamedQueries({
 	@NamedQuery(name="Users.loadAll", query="SELECT obj FROM User obj")
 })

@@ -58,14 +58,15 @@ public class User {
 	@Id
 	@Column(name="id")
 	private Integer id;
-	
+	@Column(name="name")
+	private String name;
+	@Column(name="username")
+	private String username;
+	@Column(name="password")
+	private String password;
 	@ManyToMany(mappedBy="assignedUsers")
 	private List<Role> roles = new ArrayList<Role>();
 
-	private String username;
-
-	private String password;
-	
 	public Integer getId() {
 		return id;
 	}
@@ -82,6 +83,13 @@ public class User {
 		this.roles = roles;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public String getUsername() {
 		return username;
@@ -99,16 +107,30 @@ public class User {
 		this.password = password;
 	}
 
-	/**
-	 * Users equality is determined based on primary key.
-	 */
 	@Override
-	public boolean equals(Object obj) {
-		if(obj instanceof User) {
-			User usr = User.class.cast(obj);
-			return usr.getId() == this.getId();
-		}
-		
-		return super.equals(obj);
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof User)) return false;
+
+		User user = (User) o;
+
+		if (getId() != null ? !getId().equals(user.getId()) : user.getId() != null) return false;
+		if (getName() != null ? !getName().equals(user.getName()) : user.getName() != null) return false;
+		if (getUsername() != null ? !getUsername().equals(user.getUsername()) : user.getUsername() != null)
+			return false;
+		if (getPassword() != null ? !getPassword().equals(user.getPassword()) : user.getPassword() != null)
+			return false;
+		return !(getRoles() != null ? !getRoles().equals(user.getRoles()) : user.getRoles() != null);
+
+	}
+
+	@Override
+	public int hashCode() {
+		int result = getId() != null ? getId().hashCode() : 0;
+		result = 31 * result + (getName() != null ? getName().hashCode() : 0);
+		result = 31 * result + (getUsername() != null ? getUsername().hashCode() : 0);
+		result = 31 * result + (getPassword() != null ? getPassword().hashCode() : 0);
+		result = 31 * result + (getRoles() != null ? getRoles().hashCode() : 0);
+		return result;
 	}
 }

@@ -890,3 +890,1327 @@
 [INFO][2015-06-26 17:28:58,083][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
 [INFO][2015-06-26 17:28:58,086][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
 [INFO][2015-06-26 17:28:58,102][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 108 ms
+[INFO][2015-06-28 12:45:02,538][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-28 12:45:02,729][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Jun 28 12:45:02 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 12:45:02,804][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-28 12:45:03,240][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-28 12:45:03,300][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-28 12:45:03,653][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-28 12:45:04,185][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-28 12:45:04,649][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-28 12:45:04,658][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-28 12:45:04,662][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-28 12:45:04,664][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[ERROR][2015-06-28 12:45:05,927][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,936][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,943][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,948][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,951][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,954][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,958][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,962][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,966][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,970][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,974][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,977][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,983][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,987][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,991][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:05,997][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,000][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,004][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,009][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,023][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,027][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,032][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,035][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,048][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,064][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,070][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,073][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,077][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,080][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,083][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:06,087][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:45:36,118][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[WARN][2015-06-28 12:46:05,278][com.alibaba.druid.pool.DruidDataSource]not full timeout retry : 1
+[ERROR][2015-06-28 12:46:06,125][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[ERROR][2015-06-28 12:46:36,134][com.alibaba.druid.pool.DruidDataSource]create connection error, url: jdbc:mysql://localhost:3306/uwdb
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1084)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4232)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4164)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:926)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1748)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1288)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2506)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:148)
+	at com.alibaba.druid.filter.stat.StatFilter.connection_connect(StatFilter.java:211)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_connect(FilterChainImpl.java:142)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1377)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1431)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1861)
+[WARN][2015-06-28 12:47:05,280][org.hibernate.engine.jdbc.internal.JdbcServicesImpl]HHH000342: Could not obtain connection to query metadata : wait millis 60000, active 0, maxActive 20
+[INFO][2015-06-28 12:47:05,305][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-28 12:47:05,328][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000422: Disabling contextual LOB creation as connection was null
+[INFO][2015-06-28 12:47:05,692][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-28 12:47:05,705][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-28 12:47:05,735][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-28 12:47:06,301][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-28 12:47:06,304][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-28 12:47:06,309][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-28 12:47:06,310][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-28 12:47:06,977][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-28 12:45:03",
+	ActiveCount:0,
+	PoolingCount:0,
+	CreateCount:0,
+	DestroyCount:0,
+	CloseCount:0,
+	ConnectCount:2,
+	Connections:[
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-28 12:47:08,614][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 12:45:02 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 12:47:08,673][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 12:45:02 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 12:47:08,780][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 12:47:08,792][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 12:47:08,795][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 12:47:08,804][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 12:47:08,854][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 126315 ms
+[INFO][2015-06-28 12:47:09,221][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-28 12:47:09,226][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 12:47:09 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 12:47:09,227][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-28 12:47:09,325][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 12:47:09 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 12:47:09,344][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 12:47:09 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 12:47:09,377][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 12:47:09,381][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 12:47:09,384][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 12:47:09,386][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 12:47:09,425][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 203 ms
+[INFO][2015-06-28 12:48:22,502][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-28 12:48:22,592][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Jun 28 12:48:22 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 12:48:22,635][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-28 12:48:23,001][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-28 12:48:23,074][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-28 12:48:23,455][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-28 12:48:23,918][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-28 12:48:24,402][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-28 12:48:24,414][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-28 12:48:24,419][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-28 12:48:24,422][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-28 12:48:25,419][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-28 12:48:25,740][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-28 12:48:25,747][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-28 12:48:25,777][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-28 12:48:26,046][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-28 12:48:26,051][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-28 12:48:26,058][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-28 12:48:26,059][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-28 12:48:26,955][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-28 12:48:23",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:217911413, ConnectTime:"2015-06-28 12:48:25", UseCount:1, LastActiveTime:"2015-06-28 12:48:25"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-28 12:48:27,420][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 12:48:22 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 12:48:27,479][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 12:48:22 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 12:48:27,579][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 12:48:27,598][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 12:48:27,605][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 12:48:27,615][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 12:48:27,651][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 5148 ms
+[INFO][2015-06-28 12:48:27,732][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-28 12:48:27,739][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 12:48:27 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 12:48:27,740][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-28 12:48:27,836][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 12:48:27 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 12:48:27,853][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 12:48:27 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 12:48:27,902][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 12:48:27,913][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 12:48:27,917][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 12:48:27,921][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 12:48:27,955][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 222 ms
+[INFO][2015-06-28 12:54:28,502][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-28 12:54:28,630][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Jun 28 12:54:28 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 12:54:28,727][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-28 12:54:29,044][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-28 12:54:29,113][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-28 12:54:29,456][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-28 12:54:29,889][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-28 12:54:30,392][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-28 12:54:30,407][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-28 12:54:30,415][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-28 12:54:30,418][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-28 12:54:31,230][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-28 12:54:31,535][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-28 12:54:31,542][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-28 12:54:31,563][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-28 12:54:31,763][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-28 12:54:31,768][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-28 12:54:31,774][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-28 12:54:31,774][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-28 12:54:32,609][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-28 12:54:29",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:745835029, ConnectTime:"2015-06-28 12:54:31", UseCount:1, LastActiveTime:"2015-06-28 12:54:31"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-28 12:54:33,083][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 12:54:28 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 12:54:33,141][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 12:54:28 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 12:54:33,245][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 12:54:33,261][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 12:54:33,265][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 12:54:33,313][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 12:54:33,350][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 4847 ms
+[INFO][2015-06-28 12:54:33,446][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-28 12:54:33,450][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 12:54:33 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 12:54:33,451][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-28 12:54:33,589][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 12:54:33 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 12:54:33,618][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 12:54:33 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 12:54:33,656][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 12:54:33,664][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 12:54:33,666][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 12:54:33,671][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 12:54:33,707][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 261 ms
+[INFO][2015-06-28 13:26:16,316][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-28 13:26:16,389][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Jun 28 13:26:16 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 13:26:16,427][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-28 13:26:16,718][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-28 13:26:16,779][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-28 13:26:17,061][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-28 13:26:17,389][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-28 13:26:17,745][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-28 13:26:17,758][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-28 13:26:17,763][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-28 13:26:17,765][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-28 13:26:18,466][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-28 13:26:18,731][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-28 13:26:18,735][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-28 13:26:18,757][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-28 13:26:18,938][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-28 13:26:18,943][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-28 13:26:18,949][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-28 13:26:18,950][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-28 13:26:19,683][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-28 13:26:17",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:745835029, ConnectTime:"2015-06-28 13:26:18", UseCount:1, LastActiveTime:"2015-06-28 13:26:18"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-28 13:26:20,087][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 13:26:16 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 13:26:20,142][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 13:26:16 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 13:26:20,239][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 13:26:20,250][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 13:26:20,253][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 13:26:20,263][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 13:26:20,314][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 3997 ms
+[INFO][2015-06-28 13:26:20,404][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-28 13:26:20,407][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 13:26:20 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 13:26:20,408][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-28 13:26:20,492][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 13:26:20 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 13:26:20,512][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 13:26:20 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 13:26:20,561][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 13:26:20,575][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 13:26:20,578][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 13:26:20,587][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 13:26:20,635][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 230 ms
+[INFO][2015-06-28 20:47:55,054][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-28 20:47:55,160][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Jun 28 20:47:55 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 20:47:55,213][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-28 20:47:55,456][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-28 20:47:55,537][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-28 20:47:55,973][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-28 20:47:56,371][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-28 20:47:56,759][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-28 20:47:56,783][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-28 20:47:56,789][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-28 20:47:56,792][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-28 20:47:58,142][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-28 20:47:58,403][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-28 20:47:58,411][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-28 20:47:58,435][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-28 20:47:58,668][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-28 20:47:58,671][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-28 20:47:58,678][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-28 20:47:58,679][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-28 20:47:59,367][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-28 20:47:56",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1418609585, ConnectTime:"2015-06-28 20:47:58", UseCount:1, LastActiveTime:"2015-06-28 20:47:58"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-28 20:47:59,893][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 20:47:55 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 20:47:59,954][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 20:47:55 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 20:48:00,058][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 20:48:00,072][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 20:48:00,077][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 20:48:00,086][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 20:48:00,133][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 5078 ms
+[INFO][2015-06-28 20:48:00,235][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-28 20:48:00,241][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 20:48:00 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 20:48:00,242][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-28 20:48:00,374][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 20:48:00 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 20:48:00,396][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 20:48:00 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 20:48:00,460][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 20:48:00,465][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 20:48:00,469][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 20:48:00,474][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 20:48:00,530][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 295 ms
+[INFO][2015-06-28 21:36:07,975][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-28 21:36:08,128][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Jun 28 21:36:08 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:36:08,232][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-28 21:36:08,489][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-28 21:36:08,570][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-28 21:36:12,975][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-28 21:36:13,459][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-28 21:36:14,012][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-28 21:36:14,023][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-28 21:36:14,028][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-28 21:36:14,030][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-28 21:36:15,134][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 20:48:00 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:36:15,691][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Sun Jun 28 20:47:55 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:36:15,733][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-28 21:36:15,939][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-28 21:36:16,366][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-28 21:36:16,372][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-28 21:36:16,404][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-28 21:36:17,517][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-28 21:36:17,656][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Jun 28 21:36:17 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:36:17,688][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-28 21:36:17,691][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-28 21:36:17,699][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-28 21:36:17,700][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-28 21:36:17,716][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-28 21:36:18,044][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-28 21:36:18,216][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-28 21:36:21,337][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-28 21:36:13",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1652372991, ConnectTime:"2015-06-28 21:36:15", UseCount:1, LastActiveTime:"2015-06-28 21:36:15"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-28 21:36:21,984][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-28 21:36:22,268][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-28 21:36:22,837][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-28 21:36:22,843][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-28 21:36:22,848][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-28 21:36:22,850][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-28 21:36:23,824][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-28 21:36:23,919][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/account/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.controller.AccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+[INFO][2015-06-28 21:36:23,922][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/home/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.HomeController.index()
+[INFO][2015-06-28 21:36:24,267][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 21:36:08 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:36:24,357][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-28 21:36:24,372][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2015-06-28 21:36:24,412][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 21:36:08 CST 2015]; root of context hierarchy
+[WARN][2015-06-28 21:36:24,420][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-28 21:36:24,659][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 21:36:24,680][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 21:36:24,684][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 21:36:24,697][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 21:36:24,757][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 16781 ms
+[INFO][2015-06-28 21:36:24,793][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-28 21:36:24,801][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-28 21:36:24,812][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-28 21:36:24,815][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-28 21:36:24,890][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-28 21:36:24,894][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:36:24 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:36:24,894][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-28 21:36:26,026][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-28 21:36:22",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:596496743, ConnectTime:"2015-06-28 21:36:23", UseCount:1, LastActiveTime:"2015-06-28 21:36:23"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-28 21:36:27,011][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/account/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.controller.AccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+[INFO][2015-06-28 21:36:27,012][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/home/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.HomeController.index()
+[INFO][2015-06-28 21:36:27,135][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 21:36:17 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:36:27,218][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 21:36:17 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:36:27,699][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/account/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.controller.AccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+[INFO][2015-06-28 21:36:27,715][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/home/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.HomeController.index()
+[INFO][2015-06-28 21:36:27,784][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 21:36:27,809][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:36:24 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:36:27,892][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:36:24 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:36:27,939][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 21:36:27,947][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 21:36:27,966][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 21:36:28,004][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 21:36:28,011][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 21:36:28,015][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 21:36:28,019][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 21:36:28,202][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 10683 ms
+[INFO][2015-06-28 21:36:28,271][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 3380 ms
+[INFO][2015-06-28 21:36:28,282][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-28 21:36:28,289][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:36:28 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:36:28,291][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-28 21:36:29,588][org.springframework.web.context.support.XmlWebApplicationContext]Closing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:36:24 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:36:29,699][org.springframework.web.context.support.XmlWebApplicationContext]Closing Root WebApplicationContext: startup date [Sun Jun 28 21:36:08 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:36:29,734][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2015-06-28 21:36:29,748][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/account/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.controller.AccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+[INFO][2015-06-28 21:36:29,749][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/home/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.HomeController.index()
+[INFO][2015-06-28 21:36:29,771][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:36:28 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:36:29,791][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:36:28 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:36:29,837][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 21:36:29,841][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 21:36:29,844][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 21:36:29,852][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 21:36:29,890][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 1608 ms
+[INFO][2015-06-28 21:37:10,377][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-28 21:37:10,474][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Jun 28 21:37:10 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:37:10,523][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-28 21:37:10,896][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-28 21:37:10,989][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-28 21:37:12,787][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-28 21:37:13,265][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-28 21:37:13,815][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-28 21:37:13,828][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-28 21:37:13,835][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-28 21:37:13,837][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-28 21:37:14,645][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-28 21:37:15,074][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-28 21:37:15,080][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-28 21:37:15,107][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-28 21:37:15,440][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-28 21:37:15,448][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-28 21:37:15,460][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-28 21:37:15,460][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-28 21:37:16,249][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-28 21:37:13",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:892626202, ConnectTime:"2015-06-28 21:37:14", UseCount:1, LastActiveTime:"2015-06-28 21:37:14"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-28 21:37:16,728][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/account/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.controller.AccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+[INFO][2015-06-28 21:37:16,730][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/home/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.HomeController.index()
+[INFO][2015-06-28 21:37:16,979][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 21:37:10 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:37:17,058][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 21:37:10 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:37:17,202][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 21:37:17,219][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 21:37:17,225][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 21:37:17,232][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 21:37:17,283][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 6904 ms
+[INFO][2015-06-28 21:37:17,375][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-28 21:37:17,381][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:37:17 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:37:17,382][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-28 21:37:18,809][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/account/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.controller.AccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+[INFO][2015-06-28 21:37:18,810][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/home/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.HomeController.index()
+[INFO][2015-06-28 21:37:18,837][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:37:17 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:37:18,862][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:37:17 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:37:18,897][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 21:37:18,902][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 21:37:18,904][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 21:37:18,931][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 21:37:18,971][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 1595 ms
+[INFO][2015-06-28 21:39:59,961][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization started
+[INFO][2015-06-28 21:40:00,080][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing Root WebApplicationContext: startup date [Sun Jun 28 21:40:00 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:40:00,135][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-context.xml]
+[INFO][2015-06-28 21:40:00,376][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-hibernate.xml]
+[INFO][2015-06-28 21:40:00,453][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from file [E:\ideaProjects\university-web\target\classes\spring-mvc-servlet.xml]
+[INFO][2015-06-28 21:40:02,071][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2015-06-28 21:40:02,506][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2015-06-28 21:40:03,023][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+[INFO][2015-06-28 21:40:03,036][org.hibernate.Version]HHH000412: Hibernate Core {4.3.8.Final}
+[INFO][2015-06-28 21:40:03,042][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2015-06-28 21:40:03,045][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2015-06-28 21:40:03,652][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+[INFO][2015-06-28 21:40:03,954][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2015-06-28 21:40:03,960][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[WARN][2015-06-28 21:40:03,985][org.hibernate.cfg.SettingsFactory]Unrecognized value for "hibernate.hbm2ddl.auto": none
+[INFO][2015-06-28 21:40:04,228][org.hibernate.cache.spi.UpdateTimestampsCache]HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+[WARN][2015-06-28 21:40:04,231][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+[INFO][2015-06-28 21:40:04,237][org.hibernate.cache.internal.StandardQueryCache]HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+[WARN][2015-06-28 21:40:04,237][org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory]HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+[INFO][2015-06-28 21:40:05,200][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2015-06-28 21:40:02",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:1,
+	ConnectCount:1,
+	Connections:[
+		{ID:1779341308, ConnectTime:"2015-06-28 21:40:03", UseCount:1, LastActiveTime:"2015-06-28 21:40:03"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2015-06-28 21:40:05,623][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/account/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.controller.AccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+[INFO][2015-06-28 21:40:05,624][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/home/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.HomeController.index()
+[INFO][2015-06-28 21:40:05,857][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 21:40:00 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:40:05,916][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: Root WebApplicationContext: startup date [Sun Jun 28 21:40:00 CST 2015]; root of context hierarchy
+[INFO][2015-06-28 21:40:06,025][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 21:40:06,039][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 21:40:06,044][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 21:40:06,053][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 21:40:06,090][org.springframework.web.context.ContextLoader]Root WebApplicationContext: initialization completed in 6128 ms
+[INFO][2015-06-28 21:40:06,177][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization started
+[INFO][2015-06-28 21:40:06,182][org.springframework.web.context.support.XmlWebApplicationContext]Refreshing WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:40:06 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:40:06,183][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-mvc-servlet.xml]
+[INFO][2015-06-28 21:40:07,630][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/account/login],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.controller.AccountController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+[INFO][2015-06-28 21:40:07,630][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping]Mapped "{[/home/index],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.controller.HomeController.index()
+[INFO][2015-06-28 21:40:07,651][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:40:06 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:40:07,671][org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]Looking for @ControllerAdvice: WebApplicationContext for namespace 'application-servlet-servlet': startup date [Sun Jun 28 21:40:06 CST 2015]; parent: Root WebApplicationContext
+[INFO][2015-06-28 21:40:07,698][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+[INFO][2015-06-28 21:40:07,701][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+[INFO][2015-06-28 21:40:07,703][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/webjars/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+[INFO][2015-06-28 21:40:07,706][org.springframework.web.servlet.handler.SimpleUrlHandlerMapping]Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+[INFO][2015-06-28 21:40:07,738][org.springframework.web.servlet.DispatcherServlet]FrameworkServlet 'application-servlet': initialization completed in 1561 ms
+[WARN][2015-06-28 21:40:27,148][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 42.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+[WARN][2015-06-28 21:40:27,150][org.hibernate.hql.internal.ast.HqlSqlWalker][DEPRECATION] Encountered positional parameter near line 1, column 59.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.

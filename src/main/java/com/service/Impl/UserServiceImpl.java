@@ -45,7 +45,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User findUserByNameAndPassword(User user) {
-        List<User> users =  baseDao.find("from user u where u.name=? and u.password=?", new Object[]{user.getUsername(), user.getPassword()});
+        List<User> users =  baseDao.find("from User u where u.name=? and u.password=?", new Object[]{user.getUsername(), user.getPassword()});
         return users.size() > 0 ? users.get(0) : null;
     }
 

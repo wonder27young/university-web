@@ -32,9 +32,9 @@
       <a class="navbar-brand" href="#">王小羊的网站</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
-      <form class="navbar-form navbar-right" action="<%=request.getContextPath()%>/account/login" method="post">
+      <form class="navbar-form navbar-right" action="<%=request.getContextPath()%>/login" method="post">
         <div class="form-group">
-          <input type="text" placeholder="Email" class="form-control" name="username">
+          <input type="text" placeholder="Username" class="form-control" name="username">
         </div>
         <div class="form-group">
           <input type="password" placeholder="Password" class="form-control" name="password">

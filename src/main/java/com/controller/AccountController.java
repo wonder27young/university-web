@@ -16,7 +16,7 @@ import javax.servlet.http.HttpSession;
  */
 @Controller
 @RequestMapping("/account")
-public class LoginController {
+public class AccountController {
     @Resource
     private UserService userService;
     @RequestMapping(value = "/login",method = RequestMethod.POST)
